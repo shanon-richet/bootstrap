@@ -2,6 +2,7 @@ body {
     width: 100%;
     font-family: 'Work Sans', sans-serif;
     padding: 10px;
+    overflow-x: hidden;
 }
 nav {
     display: flex;
@@ -40,10 +41,19 @@ main {
 main nav {
     margin-top: 150px;
 }
+main nav a:hover {
+    animation: 2s anim infinite;
+}
+
+@keyframes anim {
+    from {filter: brightness(0%);}
+    50% {filter: brightness(50%);}
+    to {filter: brightness(0%);}
+}
 a:active, a:hover {
     text-shadow: 2px 2px yellow;
 }
-.centered, form div {
+.centered, form div, ol img, #rooms-list li {
     position: relative; left: 50%; transform: translateX(-50%)
 }
 
@@ -76,6 +86,7 @@ h3 {
     color: red;
     background: #6c757d;
     padding: 20px;
+    margin: 50px;
     color: white;
 }
 
@@ -105,7 +116,10 @@ ol {
     color: white;
     font-size: 50px;
     padding-left: 50px;
+    margin: 150px;
     width: 90%;
+    list-style: upper-roman;
+
 }
 h6 {
     color: #0d6efd;
@@ -113,22 +127,34 @@ h6 {
     width: 90%;
     padding: 10px;
 }
-ol {
-    list-style: upper-roman;
-}
 ol li {
     padding-left: 50px;
     margin-top: 10px;
 }
 
 
+/* HOTEl */
+h4 {
+    font-size: 50px;
+    margin-bottom: 100px;
+}
+#rooms-list, #jumeirah {
+    margin: 50px;
+}
+#rooms-list li, #jumeirah li {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+ol img {
+    width: 80%;
+}
 /* ABOUT */
 
 #about {
     height: 60vh;
     background: #212529;
 }
-#about p {
+#about p, iframe {
     padding: 50px;
 }
 
@@ -166,4 +192,10 @@ input[type="submit"] {
     color: white;
     margin-top: 50px;
     border: none;
+}
+
+@media screen and (max-width: 2500px) {
+    ol img {
+        width: 100%;
+    }
 }
