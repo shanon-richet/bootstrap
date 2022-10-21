@@ -30,10 +30,10 @@ header, .card img, form, form input, textarea {
 
 /* BACKGROUNDS */
 header, input[type="submit"], #top, #lists {
-    background: #0d6efd;
+    background: #343434;
 }
 h3, .scrollspy-example div {
-    background: #6c757d;
+    background: #646464;
 }
 
 body, main nav a, #img-park, #img-ski {
@@ -99,7 +99,13 @@ main nav {
     margin-top: 120px;
 }
 main nav a:hover {
+    background: none;
     animation: 2s anim infinite;
+}
+@keyframes anim {
+    from {filter: brightness(0%);}
+    50% {filter: brightness(50%);}
+    to {filter: brightness(0%);}
 }
 #top {
     height: 90vh;
@@ -113,18 +119,13 @@ main nav a:hover {
     margin-top: 100px;
 }
 #scroll-item {
-    border: 10px solid black;
+    border: 10px solid #0d6efd;
 }
 
-@keyframes anim {
-    from {filter: brightness(0%);}
-    50% {filter: brightness(50%);}
-    to {filter: brightness(0%);}
-}
+
 a:active, a:hover {
-    text-shadow: 2px 2px yellow;
+    text-shadow: #c1daff;
 }
-
 .card {
     width: 100%;
     border: 10px solid black;
@@ -187,10 +188,12 @@ i {
     margin: 20px;
 }
 
-
 /* HOTEl */
 h4 {
     margin-bottom: 100px;
+    width: 100vw;
+    text-align: center;
+    color: #0d6efd;
 }
 #rooms-list li, #jumeirah li {
     margin-top: 50px;
@@ -241,6 +244,7 @@ input[type="submit"] {
     }
     h4 {
         font-size: 28px;
+        margin: 0;
     }
     h3, h6 {
         font-size: 40px;
@@ -297,26 +301,25 @@ input[type="submit"] {
 }
 .modal-content {
     width: 1200px;
-    border: 10px solid black;
+    opacity: 0.9;
 }
 .modal-header {
-    background-color:#0d6efd;
+    background-color: #6c757d;
     font-size: 50px;
     border: none;
+    color: white;
 }
-.modal-body, .modal-body input, .modal-body textarea {
-    background:#6c757d;
-    font-size: 30px;
+.modal-body, #modal-input {
+    background: #343434;
+    font-size: 35px;
+    color: white;
 }
 .modal-body textarea {
     height: 20vh;
 }
-.modal-content {
-    opacity: 0.9;
-}
 .modal-body input:focus, .modal-body textarea:focus {
-    border: 10px solid #212529;
-    background: #6c757d;
+    border: 10px solid #646464;
+    background: #343434;
 }
 .modal-body form {
     width: 100%;
@@ -325,10 +328,11 @@ input[type="submit"] {
 }
 .modal-body form div {
     width: 100%;
+    border: none;
 }
 .modal-footer {
     border: none;
-    background: #dc3545;
+    background: #6c757d;
 }
 .modal-footer button {
     font-size: 30px;

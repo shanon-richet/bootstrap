@@ -17,14 +17,6 @@
       <!-- NAVBAR -->
       <nav id="navbar-example2" class="navbar fixed-top bg-dark">
         <ul class="nav nav-pills">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Infos</a>
-            <ul class="dropdown-menu bg-dark">
-              <li><a id="nav-header" class="dropdown-item" href="#scrollspyHeading1">Worlds of Adventure</a></li>
-              <li><a id="nav-header" class="dropdown-item" href="#scrollspyHeading2">Ski Dubai</a></li>
-            </ul>
-          </li>
-  
           <li class="nav-item">
             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Contact</button>
           </li>
@@ -37,35 +29,35 @@
 
             <div class="modal-header">
               <h1 class="modal-title" id="exampleModalLabel">Envoie ton message </h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <button type="button" class="btn-close bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
 
             <div class="modal-body">
               <form>
                 <div>
                   <label for="prenom" class="col-form-label">Ton prénom :</label>
-                  <input type="text" class="form-control" id="recipient-name">
+                  <input id="modal-input" type="text" class="form-control" id="recipient-name">
                 </div>
 
                 <div>
                   <label for="nom" class="col-form-label">Ton nom :</label>
-                  <input type="text" class="form-control" id="recipient-name">
+                  <input id="modal-input" type="text" class="form-control" id="recipient-name">
                 </div>
 
                 <div>
                   <label for="recipient-name" class="col-form-label">Ton e-mail :</label>
-                  <input type="text" class="form-control" id="recipient-name">
+                  <input id="modal-input" type="text" class="form-control" id="recipient-name">
                 </div>
 
                 <div>
                   <label for="message-text" class="col-form-label">Ton message:</label>
-                  <textarea class="form-control" id="message-text"></textarea>
+                  <textarea id="modal-input" class="form-control" id="message-text"></textarea>
                 </div>
               </form>
             </div>
 
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
               <button type="button" class="btn btn-primary">Send message</button>
             </div>
 
@@ -77,9 +69,9 @@
     <main class="bg-primary">
       <div id="top">
         <nav id="nav-main">
-          <a href="dubai.html" class="text-light bg-dark" >Dubai</a>
-          <a href="pekin.html" class="text-light bg-dark">Pekin</a>
-          <a href="london.html" class="text-light bg-dark">London</a>
+          <a href="dubai.html" class="text-light" >Dubai</a>
+          <a href="pekin.html" class="text-light">Pekin</a>
+          <a href="london.html" class="text-light">London</a>
         </nav>
   
           <div id="carouselExampleFade" class="carousel slide" data-bs-touch="false" >
