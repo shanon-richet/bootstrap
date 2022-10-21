@@ -1,7 +1,6 @@
 body {
     width: 100%;
     font-family: 'Work Sans', sans-serif;
-    padding: 10px;
     overflow-x: hidden;
 }
 nav {
@@ -10,39 +9,111 @@ nav {
     gap: 30px;
 }
 
-/* HEADER */
-.nav-item:active {
-    background: red;
+/* FONT-SIZES */
+a, ul {
+    font-size: 40px;
 }
+h3, h4, ol, form div {
+    font-size: 50px;
+}
+h2, h6 {
+    font-size: 60px;
+}
+
+/* WIDTHS */
+header, .card img, form, form input, textarea {
+    width: 100%;
+}
+#lists, ol, h6 {
+    width: 95vw;
+}
+
+/* BACKGROUNDS */
+header, input[type="submit"], #top, #lists {
+    background: #0d6efd;
+}
+h3, .scrollspy-example div {
+    background: #6c757d;
+}
+
+body, main nav a, #img-park, #img-ski {
+    background: #212529;
+}
+.nav-item:active, #a-header:active {
+    background: yellow;
+}
+#nav-header:hover {
+    background: #dc3545;
+}
+/* COLORS */
+#nav-header, h3, main nav a, .scrollspy-example div p, ol, form div, input[type="submit"] {
+    color: white;
+}
+
+/* PADDINGS */
+h3, .scrollspy-example div, h6 {
+    padding: 20px;
+}
+a, ul, main, nav, #about p, iframe, form div {
+    padding: 30px;
+}
+
+/* MARGINS */ 
+.scrollspy-example div div, h6 {
+    margin-top: 100px;
+}
+form input, textarea, label {
+    margin-top: 20px;
+}
+
+/* CENTERED */
+#top, .carousel-inner, #nav-main, form div, ul img, #rooms-list li, #lists, h4, .modal-content, h3, h6 {
+    position: relative; 
+    left: 50%; 
+    transform: translateX(-50%)
+}
+
+ul {
+    list-style: none;
+}
+
+/* HEADER */
 .navbar {
     padding-left: 30px;
-}
-#a-header {
-    color: white;
-}
-#a-header:hover {
-    background: black;
+    height: 150px;
+    border-bottom: 10px solid #dc3545;
 }
 a, ul {
-    padding: 30px;
-    font-size: 40px;
     text-decoration: none;
 }
-header nav ul li a {
-    color: white;
+#logo {
+    position: absolute;
+    top: 5%;
+    width: 100px;
+    left: 90%;
 }
 
 
 /* MAIN */
-
-main {
-    height: 100vh;
-}
 main nav {
-    margin-top: 150px;
+    margin-top: 120px;
 }
 main nav a:hover {
     animation: 2s anim infinite;
+}
+#top {
+    height: 90vh;
+    width: 100vw;
+}
+.carousel-inner {
+    width: 80%;
+    max-width: 3000px;
+}
+.scrollspy-example div {
+    margin-top: 100px;
+}
+#scroll-item {
+    border: 10px solid black;
 }
 
 @keyframes anim {
@@ -53,56 +124,32 @@ main nav a:hover {
 a:active, a:hover {
     text-shadow: 2px 2px yellow;
 }
-.centered, form div, ol img, #rooms-list li {
-    position: relative; left: 50%; transform: translateX(-50%)
-}
 
-.width-80 {
-    width: 80%;
-    max-width: 2500px;
-}
-.width-100 {
+.card {
     width: 100%;
-}
-main, nav {
-    padding: 50px;
+    border: 10px solid black;
 }
 #carousel-btn {
     width: 100px;
     aspect-ratio: 1/1;
     border-radius: 50%;
-    margin-top: 20vh;
-}
-.card {
-    border: 10px solid black;
+    margin-top: 30%;
 }
 h2, h6 {
     font-weight: bold;
-    font-size: 60px;
+}
+h6 {
+    background: #212529;
+    color: #0d6efd;
 }
 h3 {
-    font-size: 50px;
+    text-align: center;
     font-weight: bold;
-    color: red;
-    background: #6c757d;
-    padding: 20px;
-    margin: 50px;
-    color: white;
+    background:#dc3545;
 }
 
-/* FOOTER */
-footer div {
-    padding: 10px;
-    background: white;
-}
-footer div p {
-    font-size: 40px;
-    background: #212529;
-    color: white;
-    padding: 50px;
-}
+/* SCROLL ITEMS */
 #img-park, #img-ski{
-    background: #212529;
     display: flex;
     justify-content: space-evenly;
 }
@@ -113,89 +160,176 @@ footer div p {
     width: 30%;
 }
 ol {
-    color: white;
-    font-size: 50px;
-    padding-left: 50px;
-    margin: 150px;
-    width: 90%;
+    margin-left: 100px;
     list-style: upper-roman;
+}
+ol li::marker {
+    color: red;
+}
 
+
+/* FOOTER */
+
+footer {
+    height: 10vh;
+    background: #0d6efd;
+    margin: 30px;
 }
-h6 {
-    color: #0d6efd;
-    margin-left: 200px;
-    width: 90%;
-    padding: 10px;
+footer div {
+    float: right;
+    margin-right: 1%;
+    margin-top: 1%;
 }
-ol li {
-    padding-left: 50px;
-    margin-top: 10px;
+i {
+    color: white;
+    background: #212529;
+    border-radius: 5%;
+    margin: 20px;
 }
 
 
 /* HOTEl */
 h4 {
-    font-size: 50px;
     margin-bottom: 100px;
-}
-#rooms-list, #jumeirah {
-    margin: 50px;
 }
 #rooms-list li, #jumeirah li {
     margin-top: 50px;
     margin-bottom: 50px;
 }
-ol img {
+ul img {
     width: 80%;
 }
 /* ABOUT */
 
 #about {
     height: 60vh;
-    background: #212529;
 }
-#about p, iframe {
-    padding: 50px;
+iframe {
+    width: 100%;
+    height: 70%;
 }
-
 
 /* CONTACT FORM */
 form {
-    width: 100%;
-    background:#212529;
     display: flex;
 }
 form div {
     display: flex;
     flex-direction: column;
-    padding: 50px;
-    font-size: 50px;
-    color: white;
-    width: 60%;
-    background: none;
     align-self: center;
-    background: #6c757d;
-    border: 5px solid #0d6efd;
+    border: 5px solid #6c757d;
 }
-label {
-    padding: 20px;
-    margin-top: 20px;
-
-}
-form input, textarea {
-    width: 100%;
-    margin-top: 20px;
-}
-
 input[type="submit"] {
-    background: #212529;
-    color: white;
     margin-top: 50px;
     border: none;
+    border: 5px solid #6c757d;
 }
 
 @media screen and (max-width: 2500px) {
-    ol img {
+    ul img {
         width: 100%;
     }
+}
+
+@media screen and (max-width: 800px) {
+    main {
+        padding: 0;
+    }
+    h3 {
+        font-size: 30px;
+        width: 99vw;
+    }
+    h4 {
+        font-size: 28px;
+    }
+    h3, h6 {
+        font-size: 40px;
+        width: 95vw;
+    }
+    ul, a {
+        padding: 5px;
+    }
+    .scrollspy-example div {
+        margin-top: 10px;
+    }
+    .card, #scroll-item {
+        border: 3px solid black;
+    }
+    #img-park {
+        flex-wrap: wrap;
+        margin: 0;
+    }
+    #img-park img {
+        width: 45%;
+    }
+    #lists {
+        width: 99vw;
+    }
+    #rooms-list li, #jumeirah li {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    a, ul {
+        font-size: 20px;
+    }
+    ol {
+        margin-left: 10px;
+        font-size: 30px;
+    }
+    ul img {
+        width: 100%;
+    }
+    iframe {
+        width: 100%;
+    }
+    form div {
+        font-size: 20px;
+    }
+    input[type="submit"] {
+        margin-top: 10px;
+    }
+}
+
+
+/* LONDRES */
+.nav-item button {
+    font-size: 30px;
+}
+.modal-content {
+    width: 1200px;
+    border: 10px solid black;
+}
+.modal-header {
+    background-color:#0d6efd;
+    font-size: 50px;
+    border: none;
+}
+.modal-body, .modal-body input, .modal-body textarea {
+    background:#6c757d;
+    font-size: 30px;
+}
+.modal-body textarea {
+    height: 20vh;
+}
+.modal-content {
+    opacity: 0.9;
+}
+.modal-body input:focus, .modal-body textarea:focus {
+    border: 10px solid #212529;
+    background: #6c757d;
+}
+.modal-body form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.modal-body form div {
+    width: 100%;
+}
+.modal-footer {
+    border: none;
+    background: #dc3545;
+}
+.modal-footer button {
+    font-size: 30px;
 }

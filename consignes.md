@@ -4,12 +4,12 @@
 X - css & bootstrap
 X - navbar sticky & footer
 X - carousel min 4 images
-- modal bootstrap
+X - modal bootstrap
 X - ancrage 
 X - formulaire de contact - google map
 X - hover, focus et active
-- fontawesome 
-- fadeicone (logo)
+X - fontawesome 
+X - fadeicone (logo)
 X - liste ordonnée chiffre romains
 X - media query
 X - musique, vidéos, img
